@@ -1,0 +1,5 @@
+replicaCount: 1
+image:
+  repository: ghcr.io/troshxa/somemathfuncs
+  tag: latest
+  pullPolicy: Always

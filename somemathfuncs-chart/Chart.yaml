@@ -1,0 +1,5 @@
+apiVersion: v2
+name: somemathfuncs-chart
+description: Helm chart for Lab 2
+type: application
+version: 0.1.0
