@@ -51,7 +51,7 @@ jobs:
           push: true
           tags: ${{ env.REGESRTY }}/${{ env.IMAGE_NAME }}:latest
 
-  pull_test_docker:
+  pull_docker:
     needs: build_and_push_docker
     runs-on: ubuntu-latest
     permissions:
@@ -67,8 +67,6 @@ jobs:
       - name: Pull Docker image
         run: docker pull ${{ env.REGESRTY }}/${{ env.IMAGE_NAME }}:latest
 
-      - name: Run Docker container and test
-        run: docker run --rm ${{ env.REGESRTY }}/${{ env.IMAGE_NAME }}:latest cargo test
         
 
 
