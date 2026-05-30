@@ -421,3 +421,10 @@ FodyWeavers.xsd
 *.msp
 master
 target/
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/lambda/copy_file.zip
+terraform/test.txt
